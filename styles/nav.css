@@ -18,3 +18,9 @@ nav ul li:last-child img {
   width: 40px;
   height: 40px;
 }
+
+@media (width <= 26.875em) {
+  nav ul li:nth-child(3), nav ul li:nth-child(2){
+    display: none;
+  };
+}

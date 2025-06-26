@@ -2,9 +2,22 @@ footer {
   display: flex;
   gap: 24px;
   padding-block: 24px;
-  font: 14px/150% var(--font-family)
+  font: 14px/150% var(--font-family);
 }
 
 footer span:nth-child(1) {
   margin-right: auto;
+}
+
+@media (width <= 26.875em) {
+  footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  footer span:nth-child(1) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 }

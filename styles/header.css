@@ -1,6 +1,6 @@
 header {
   padding-block: 32px;
-  font: var(--text-md)
+  font: var(--text-md);
 }
 
 header .container {
@@ -29,7 +29,7 @@ header .container {
   margin-bottom: 8px;
 }
 
-#info{
+#info {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -41,4 +41,22 @@ header .container {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+@media (width <= 26.875em) {
+  header .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #profile img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #profile {
+    flex-direction: column;
+    max-width: 18rem;
+    font-size: 0.96rem;
+  }
 }

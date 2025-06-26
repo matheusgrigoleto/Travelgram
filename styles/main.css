@@ -10,3 +10,9 @@ main img {
   height: 286px;
   object-fit: cover;
 }
+
+@media (width <= 26.875em) {
+  main img {
+    width: 100%;
+  }
+}
